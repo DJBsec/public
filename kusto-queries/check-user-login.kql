@@ -1,6 +1,6 @@
 IdentityLogonEvents 
 // Choose account to look at by UPN
-| where AccountUpn contains "jose.cantu@gwii.com"
+| where AccountUpn contains "user@email.com"
 // Do Not show logins that came from inside this country
 | where Location !contains "country" 
 // Show the time the login was tried, with the failure reason and the country with IP and ISP data
