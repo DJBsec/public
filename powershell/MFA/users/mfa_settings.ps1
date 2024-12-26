@@ -17,7 +17,6 @@ Connect-MsolService –Credential $UserCredential
 Get-MsolUser  | Select-Object UserPrincipalName,StrongAuthenticationMethods,StrongAuthenticationRequirements 
 
 #Import DatA from CSV file and create variable
-#Import-Csv ".\mfa_gwii.csv";
 $UsersArray = Import-Csv ".\mfa_.csv";
 #search through file and create array for Data input
 foreach($user in $UsersArray)
